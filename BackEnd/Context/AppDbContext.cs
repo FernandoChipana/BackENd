@@ -17,5 +17,6 @@ namespace BackEnd.Context
 
         }
         public DbSet<fmedicos> FMEDICOS { get; set; }
+        public DbSet<turnos> turnos { get; set; }
     }
 }

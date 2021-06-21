@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BackEnd.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("fmedicos")]
     [ApiController]
     public class fmedicosController : ControllerBase
     {
@@ -28,7 +28,7 @@ namespace BackEnd.Controllers
         }
 
         // GET: api/fmedicos/5
-        [HttpGet("{cmp}", Name = "Get")]
+       [HttpGet("{cmp}", Name = "Get")]
         public fmedicos Get(String cmp)
         {
             var fmedicos = context.FMEDICOS.FirstOrDefault(p=>p.cmp==cmp);
@@ -54,7 +54,7 @@ namespace BackEnd.Controllers
         }
 
         // PUT: api/fmedicos/5
-        [HttpPut("{id}")]
+        [HttpPut("{cmp}")]
         public ActionResult Put(String cmp, [FromBody] fmedicos fmedicos)
         {
             
@@ -70,7 +70,7 @@ namespace BackEnd.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
+        [HttpDelete("/delete/{cmp}")]
         public ActionResult Delete(String cmp)
         {
             var fmedicos = context.FMEDICOS.FirstOrDefault(p => p.cmp == cmp);
@@ -84,4 +84,6 @@ namespace BackEnd.Controllers
                 return BadRequest();
         }
     }
+    
+    
 }
