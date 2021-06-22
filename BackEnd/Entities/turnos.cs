@@ -17,11 +17,13 @@ namespace BackEnd.Entities
         [Column("codcon")]
         public decimal codcon { get; set; }
         [Column("turuni")]
-        public String turini { get; set; }
+       // [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{yyyy-MM-ddTHH:mm:ss}")]
+        public DateTime turini { get; set; }
         [Column("turfin")]
-        public String turfin { get; set; }
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{yyyy-MM-ddTHH:mm:ss}")]
+        public DateTime turfin { get; set; }
         [Column("turtime")]
-        public String turtime { get; set; }
+        public int turtime { get; set; }
         [Column("Lun")]
         public String lun { get; set; }
         [Column("Mar")]
