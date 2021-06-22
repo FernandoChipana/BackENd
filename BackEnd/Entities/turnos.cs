@@ -15,15 +15,15 @@ namespace BackEnd.Entities
         [Column("Turcod")]
         public String turcod { get; set; }
         [Column("codcon")]
-        public decimal codcon { get; set; }
+        public String codcon { get; set; }
         [Column("turuni")]
-       // [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{yyyy-MM-ddTHH:mm:ss}")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{yyyy-MM-ddTHH:mm:ss}")]
         public DateTime turini { get; set; }
         [Column("turfin")]
         //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{yyyy-MM-ddTHH:mm:ss}")]
         public DateTime turfin { get; set; }
         [Column("turtime")]
-        public int turtime { get; set; }
+        public String turtime { get; set; }
         [Column("Lun")]
         public String lun { get; set; }
         [Column("Mar")]

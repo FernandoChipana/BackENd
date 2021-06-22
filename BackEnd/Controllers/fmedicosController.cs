@@ -70,7 +70,7 @@ namespace BackEnd.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("/delete/{cmp}")]
+        [HttpDelete("{cmp}")]
         public ActionResult Delete(String cmp)
         {
             var fmedicos = context.FMEDICOS.FirstOrDefault(p => p.cmp == cmp);
