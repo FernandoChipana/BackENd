@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BackEnd.Context;
+using BackEnd.Data;
 using BackEnd.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -21,11 +22,12 @@ namespace BackEnd.Controllers
         {
             this.context = context;
         }
-        // GET: api/especialidad
+        
+
         [HttpGet]
         public IEnumerable<fespecialidad> Get()
         {
-            return context.fespecialidad.ToList();
+            return fespecialidadData.ListarFespecialidad();
         }
 
         // GET: api/especialidad/5

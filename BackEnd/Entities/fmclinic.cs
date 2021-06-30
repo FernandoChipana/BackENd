@@ -20,7 +20,7 @@ namespace BackEnd.Entities
         [Column("NDOC")]
         public String ndoc { get; set; }
         [Column("FENA")]
-        [DisplayFormat(DataFormatString = "{yyyy-m-d}", ApplyFormatInEditMode = true)]
+        //[DisplayFormat(DataFormatString = "{yyyy-m-d}", ApplyFormatInEditMode = true)]
         public DateTime fechnac { get; set; }
         [Column("SEXO")]
         public String sexo { get; set; }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BackEnd.Context;
+using BackEnd.Data;
 using BackEnd.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -22,9 +23,9 @@ namespace BackEnd.Controllers
         }
         // GET: api/turnos
         [HttpGet]
-        public IEnumerable<turnos> Get()
+        public IEnumerable<fturnos> Get()
         {
-            return context.turnos.ToList();
+            return turnosData.ListarFturnos();
         }
 
         // GET: api/turnos/5

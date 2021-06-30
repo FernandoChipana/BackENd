@@ -21,8 +21,7 @@ namespace BackEnd.Entities
 		public DateTime FECNAC { get; set; }
 		public String celu { get; set; }
 		public String email { get; set; }
-		public String nombres { get; set; }
-		public String especialidad { get; set; }
+		
 		
 
 

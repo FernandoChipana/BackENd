@@ -14,6 +14,8 @@ namespace BackEnd.Entities
         public String id { get; set; }
         [Column("Turcod")]
         public String turcod { get; set; }
+        [Column("Serv")]
+        public String serv { get; set; }
         [Column("codcon")]
         public String codcon { get; set; }
         [Column("turuni")]
